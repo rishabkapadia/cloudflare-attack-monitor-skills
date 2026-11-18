@@ -28,6 +28,22 @@ Scanners constantly request sensitive paths like `.env`, `credentials.json`, `ph
 - Checks expression length (4,096-character cap) and plan rule limits before writing.
 - Reports results per zone.
 
+## Install
+
+Install the skill with the [Skills CLI](https://skills.sh):
+
+```
+npx skills add https://github.com/rishabkapadia/cloudflare-attack-monitor-skills \
+  --skill cloudflare-404-probe
+```
+
+## Usage
+
+Ask your agent: 
+```
+scan for 404 responses on cloudflare
+```
+
 ## License
 
 See [LICENSE](LICENSE).
