@@ -28,6 +28,17 @@ Scanners constantly request sensitive paths like `.env`, `credentials.json`, `ph
 - Checks expression length (4,096-character cap) and plan rule limits before writing.
 - Reports results per zone.
 
+## Cloudflare MCP permissions
+
+Create a **user profile API token** (My Profile → API Tokens), not an account-owned token, and grant it:
+
+- Zone Observability: Read
+- Zone WAF: Edit
+- Zone WAF: Read
+- Zone: Read
+- Logs: Read
+- Analytics: Read
+
 ## Install
 
 Install the skill with the [Skills CLI](https://skills.sh):
